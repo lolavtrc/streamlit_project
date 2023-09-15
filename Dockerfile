@@ -26,7 +26,7 @@ COPY ./app/data/tmdb_5000_movies.csv /app/data/tmdb_5000_movies.csv
 RUN pip install -r /app/requirements.txt
 
 # Exposez le port 8504 (si nécessaire)
-EXPOSE 8504
+EXPOSE 8505
 
 # Commande de vérification de l'état de santé (healthcheck)
 HEALTHCHECK CMD curl --fail http://localhost:8504/_stcore/health
